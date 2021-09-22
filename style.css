@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+:root {
+    --primar-color: #3B0000;
+    --text-color: #FFF6CD;
+}
+
+body {
+    font-family: 'Architects Daughter', cursive;
+    margin: 0;
+    color: var(--text-color);
+}
+
+.container-center {
+    position: relative;
+    max-width: 550px;
+    margin: auto;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.contents {
+    padding-bottom: 10rem;
+    text-align: left;
+}
+
+textarea,
+button {
+    display: block;
+    margin: 1.5rem auto;
+}
+
+header {
+    background-color: var(--primar-color);
+    margin-top: 0;
+    padding: 2rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+textarea {
+    border-color: var(--primar-color);
+    border-width: 0.2rem;
+    border-radius: 0.3rem;
+    max-width: 90%;
+    margin: 3rem 1rem;
+}
+
+.contents p {
+    color:black;
+    margin: 1rem 1rem 0rem;
+}
+
+#output-text {
+    border-style: solid;
+    border-color: var(--primar-color);
+    height: 5rem;
+    border-width: 0.2rem;
+    border-radius: 0.3rem;
+    max-width: 90%;
+    margin: 0.5rem 1rem 1rem;
+}
+
+
+button {
+    background-color: var(--primar-color);
+    border-style: none;
+    padding: 1rem;
+    border-radius: 0.2rem;
+    margin: 1rem;
+    color: var(--text-color);
+}
+
+footer {
+    position: absolute;
+    background-color: var(--primar-color);
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+    bottom: 0;
+    height: 10rem;
+}
+
+footer p {
+    margin: 0 1rem 0;
+}
+
+footer h2 {
+    margin-bottom: 0.1rem;
+}
