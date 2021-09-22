@@ -7,7 +7,7 @@ var url = "https://api.funtranslations.com/translate/hodor.json"
 
 
 function apiUrlConstructor(text) {
-    var encodedText = encodeURIComponent(text)
+    var encodedText = encodeURI(text)
     var queryUrl = `${url}?text=${encodedText}`;
     console.log(encodeURI(queryUrl));
     return encodeURI(queryUrl);
