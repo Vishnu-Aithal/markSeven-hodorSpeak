@@ -7,10 +7,11 @@ var url = "https://api.funtranslations.com/translate/hodor.json"
 
 
 function apiUrlConstructor(text) {
-    var encodedText = encodeURI(text)
-    var queryUrl = `${url}?text=${encodedText}`;
-    console.log(encodeURI(queryUrl));
-    return encodeURI(queryUrl);
+    // var encodedText = encodeURI(text)
+    // var queryUrl = `${url}?text=${encodedText}`;
+    // console.log(encodeURI(queryUrl));
+    // return encodeURI(queryUrl);
+    return `${url}?text=${text}`;
 }
 
 
@@ -19,5 +20,9 @@ translateBtn.addEventListener("click", clickHandler)
 function clickHandler() {
     var inputText = inputTextBox.value;
     var apiUrl = apiUrlConstructor(inputText);
-    fetch(apiUrl).then(response => response.json()).then(json => outputTextBox.innerText = json.contents.translated)
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(json => outputTextBox.innerText = json.contents.translated)
+    .catch(error => console.log(error.code))
+    .finally(outputTextBox.innerText = "error with api")
 }
