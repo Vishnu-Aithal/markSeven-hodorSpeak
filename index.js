@@ -23,6 +23,6 @@ function clickHandler() {
     fetch(apiUrl)
     .then(response => response.json())
     .then(json => outputTextBox.innerText = json.contents.translated)
-    .catch(error => console.log(error.code))
-    .finally(outputTextBox.innerText = "error with api")
+    .catch(error => console.log(error))
+    
 }
