@@ -50,7 +50,7 @@ textarea {
     margin: 3rem 1rem;
     background-color: rgba(0, 0, 0, 0.2);
     font-size: large;
-    color: whitesmoke;
+    color: white;
 }
 
 .contents p {
@@ -66,7 +66,7 @@ textarea {
     border-radius: 0.3rem;
     max-width: 90%;
     margin: 0.5rem 1rem 1rem;
-    color: whitesmoke;
+    color: white;
     background-color: rgba(0, 0, 0, 0.2);
     font-size: large;
     font-weight: bold;
