@@ -14,6 +14,13 @@ function apiUrlConstructor(text) {
     return `${url}?text=${text}`;
 }
 
+inputTextBox.oninput = (event)=>{
+    if(event.target.value!=""){
+        translateBtn.removeAttribute("disabled");
+    } else {
+        translateBtn.setAttribute("disabled", "");
+    }
+}
 
 translateBtn.addEventListener("click", clickHandler)
 

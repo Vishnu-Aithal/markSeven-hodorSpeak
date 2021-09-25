@@ -81,6 +81,9 @@ button {
     margin: 1rem;
     color: var(--text-color);
 }
+button:disabled{
+    color:gray;
+}
 
 footer {
     position: absolute;
