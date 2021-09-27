@@ -1,6 +1,6 @@
 # markSeven-hodorSpeak
  
-A Translator App which translatetes to HODOR
+A Translator App which translates to HODOR
 
 > ### Tech Stack Used:
 - HTML5
