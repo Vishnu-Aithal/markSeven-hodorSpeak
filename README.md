@@ -21,3 +21,7 @@ A Translator App which translates to HODOR
 4. The Translated text will appear in the Output Box
 ---
 Max 5 Translations per Hour
+---
+
+> ## Live Link:
+- https://vishnu-markseven-hodorspeak.netlify.app/
